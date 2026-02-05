@@ -39,7 +39,7 @@
 
     "mac": {
       "target": "dmg",
-      "category": "public.app-category.medical"
+      "category": "public.app-category.medical",
       "signAndEditExecutable": false
     },
     "nsis": {
