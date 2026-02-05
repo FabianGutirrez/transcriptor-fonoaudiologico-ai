@@ -10,7 +10,7 @@
     "dev": "vite",
     "electron:dev": "cross-env NODE_ENV=development electron .",
     "build": "vite build",
-    "dist": "vite build && electron-builder"
+    "dist": "vite build && electron-builder --publish never"
   },
   "dependencies": {
     "@google/genai": "^1.37.0",
