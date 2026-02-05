@@ -1,0 +1,50 @@
+{
+  "name": "transcriptor-fonoaudiologico-ai",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Transcriptor fonoaudiologico con IA",
+  "author": "Fabian Gutierrez",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "electron:dev": "cross-env NODE_ENV=development electron .",
+    "build": "vite build",
+    "dist": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@google/genai": "^1.37.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "cross-env": "^10.1.0",
+    "electron": "^40.1.0",
+    "electron-builder": "^26.7.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  },
+  "build": {
+    "appId": "com.fabian.transcriptorfono",
+    "productName": "Transcriptor Fonoaudiologico AI",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+
+    "forceCodeSigning": false,
+
+    "win": {
+      "target": "nsis",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false
+    }
+  }
+}
