@@ -39,7 +39,8 @@
 
     "mac": {
       "target": "dmg",
-      "category": "public.app-category.medical"
+      "category": "public.app-category.medical",
+      "arch": ["x64", "arm64"]
       
     },
     "nsis": {
