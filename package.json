@@ -34,14 +34,15 @@
       "electron/**/*",
       "package.json"
     ],
-
     "forceCodeSigning": false,
-
     "mac": {
-      "target": "dmg",
-      "category": "public.app-category.medical",
-      "arch": ["x64", "arm64"]
-      
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "category": "public.app-category.medical"
     },
     "nsis": {
       "oneClick": true,
@@ -50,3 +51,4 @@
     }
   }
 }
+
