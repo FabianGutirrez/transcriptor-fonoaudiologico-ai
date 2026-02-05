@@ -40,7 +40,7 @@
     "mac": {
       "target": "dmg",
       "category": "public.app-category.medical",
-      "signAndEditExecutable": false
+      
     },
     "nsis": {
       "oneClick": true,
